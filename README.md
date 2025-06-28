@@ -30,13 +30,13 @@ go build -o latlon
 ### Run (default: JSON)
 
 ```bash
-./bin/latlon -input=/path/to/geojson -output=locations.json
+./latlon -input=/path/to/geojson -output=locations.json
 ```
 
 ### Run with SQL output
 
 ```bash
-./bin/latlon -input=/path/to/geojson -output=locations.sql --sql --table=locations
+./latlon -input=/path/to/geojson -output=locations.sql --sql --table=locations
 ```
 
 ---
