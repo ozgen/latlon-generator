@@ -74,7 +74,7 @@ go tool cover -html=coverage.out
 ### SQL
 
 ```sql
-CREATE TABLE IF NOT EXISTS locations (
+CREATE TABLE IF NOT EXISTS lookup_location (
   id SERIAL PRIMARY KEY,
   province TEXT,
   municipality TEXT NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS locations (
   longitude DOUBLE PRECISION NOT NULL
 );
 
-INSERT INTO locations (province, municipality, latitude, longitude)
+INSERT INTO lookup_location (province, municipality, latitude, longitude)
 VALUES ('', 'Adams', 18.5284, 120.9018);
 ```
 
